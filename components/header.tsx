@@ -1,5 +1,5 @@
 "use client";
-import { Home, Menu } from "lucide-react";
+import { Home, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -33,18 +33,22 @@ export default function Header() {
           ))}
         </nav>
 
-        <button className="text-2xl md:hidden text-white" onClick={toggleMenu}>
-          <Menu size={32} />
+        <button
+          className="text-2xl md:hidden text-white"
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Close Menu" : "Open Menu"}
+        >
+          {isOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-[#1e9577] md:hidden">
-            <nav className="flex flex-col p-4">
+          <div className="absolute top-16 left-0 right-0 bg-[#1e9577] md:hidden transition-all duration-200">
+            <nav className="flex flex-col p-4 border-t border-teal-600">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:underline py-2"
+                  className="text-white hover:bg-teal-800 py-3 px-4 rounded-lg transition-colors duration-200"
                   onClick={() => setOpen(false)}
                 >
                   {item.name}
