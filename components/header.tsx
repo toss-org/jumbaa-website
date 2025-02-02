@@ -11,8 +11,9 @@ export default function Header() {
   };
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "features", href: "#features" },
+    { name: "details", href: "#details" },
+    { name: "about", href: "/about" },
   ];
   return (
     <header className="bg-[#1e9577] p-4 shadow-md">
