@@ -10,7 +10,7 @@ export default function Details() {
     "karibu na huduma zote muhimu",
   ];
   return (
-    <section className="py-20 text-[#1e9577]">
+    <section className="py-20 text-[#1e9577]" id="details">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
           Discover you new home
