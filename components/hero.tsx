@@ -2,7 +2,7 @@ import CountdownTimer from "./countdown-timer";
 
 export default function Hero() {
   return (
-    <section className="min-h-[70vh] flex flex-col justify-center items-center py-20">
+    <section className="min-h-[70vh] flex flex-col justify-center items-center py-20 text-gray-800">
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
           Jumbaa Awaits
