@@ -1,4 +1,2 @@
-script:
-    npm install
-    npm run build
-run: npm run start --port 4000 --host 0.0.0.0
+script: bun install
+run: bun run dev --port 3000 --host 0.0.0.0
