@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="py-20 bg-gray-100 text-[#1e9577]">
+    <section className="py-20  text-[#1e9577]">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
           We are here for you, no matter where you reside
@@ -15,7 +15,7 @@ export default function Features() {
         <div className="flex flex-col items-center">
           <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg"
+              src="/patricia-hokororo-property-unsplash.jpg"
               fill
               className="object-cover rounded-lg shadow-lg transition duration-300 hover:scale-105"
               alt="Feature screenshot 1"
@@ -27,7 +27,7 @@ export default function Features() {
         <div className="flex flex-col items-center">
           <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg"
+              src="/patricia-hokororo-property-unsplash.jpg"
               fill
               className="object-cover rounded-lg shadow-lg transition duration-300 hover:scale-105"
               alt="Feature screenshot 2"
@@ -39,7 +39,7 @@ export default function Features() {
         <div className="flex flex-col items-center">
           <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg"
+              src="/patricia-hokororo-property-unsplash.jpg"
               fill
               className="object-cover rounded-lg shadow-lg transition duration-300 hover:scale-105"
               alt="Feature screenshot 3"
