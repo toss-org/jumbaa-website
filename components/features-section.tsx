@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="py-20  text-[#1e9577]" id="features">
-      <div className="container mx-auto px-6">
+    <section className="py-20 text-[#1e9577]" id="features">
+      <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
           We are here for you, no matter where you reside
         </h2>
@@ -11,7 +11,7 @@ export default function Features() {
           get honest details about the property before making your decision
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-4 sm:px-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto">
         <div className="flex flex-col items-center">
           <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
             <Image
