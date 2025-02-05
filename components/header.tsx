@@ -16,7 +16,7 @@ export default function Header() {
     { name: "about", href: "/about" },
   ];
   return (
-    <header className="bg-[#1e9577] py-4 px-6  shadow-md sticky top-0">
+    <header className="bg-[#1e9577] py-4 px-6  shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Home size={32} className="text-white" />
