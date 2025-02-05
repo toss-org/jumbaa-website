@@ -1,22 +1,32 @@
 export const teamMembers = [
   {
     profile: "/images/undraw-coding.svg",
-    name: "John Doe",
+    name: "Zaburi Frolian",
     position: "Lead Designer",
   },
   {
     profile: "/images/undraw-coding.svg",
-    name: "Jane Doe",
+    name: "Fuad",
     position: "Lead Backend Developer",
   },
   {
     profile: "/images/undraw-coding.svg",
-    name: "John Smith",
+    name: "Ponsiano Jisena",
     position: "Lead Frontend Developer",
   },
   {
     profile: "/images/undraw-coding.svg",
-    name: "Jane Smith",
-    position: "Systems Engineer",
+    name: "Newton Musyani",
+    position: "Software Developer",
+  },
+  {
+    profile: "/images/undraw-coding.svg",
+    name: "Josephat Foya",
+    position: "Lead Marketing Manager",
+  },
+  {
+    profile: "/images/undraw-coding.svg",
+    name: "Joe",
+    position: "Tech",
   },
 ];
