@@ -1,6 +1,30 @@
 import Image from "next/image";
 
+type FeatureImageProps = {
+  src: string;
+  alt: string;
+};
+const FeatureImage = ({ src, alt }: FeatureImageProps) => (
+  <div className="">
+    <div className="my-4 relative w-full h-1/2 min-h-[50vh] rounded-lg overflow-hidden">
+      <Image
+        src={src}
+        fill
+        className="object-contain rounded-lg shadow-lg transition duration-300 hover:scale-105"
+        alt={alt}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+      />
+    </div>
+  </div>
+);
+
 export default function Features() {
+  const features = [
+    { src: "/home-prototype.png", alt: "Feature screenshot 1" },
+    { src: "/house-prototype.png", alt: "Feature screenshot 2" },
+    { src: "/map-listing.png", alt: "Feature screenshot 3" },
+  ];
+
   return (
     <section className="py-20 text-[#1e9577]" id="features">
       <div className="container mx-auto">
@@ -11,42 +35,10 @@ export default function Features() {
           get honest details about the property before making your decision
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto">
-        <div className="flex flex-col items-center">
-          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
-            <Image
-              src="/patricia-hokororo-property-unsplash.jpg"
-              fill
-              className="object-cover rounded-lg shadow-lg transition duration-300 hover:scale-105"
-              alt="Feature screenshot 1"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
-            <Image
-              src="/patricia-hokororo-property-unsplash.jpg"
-              fill
-              className="object-cover rounded-lg shadow-lg transition duration-300 hover:scale-105"
-              alt="Feature screenshot 2"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
-            <Image
-              src="/patricia-hokororo-property-unsplash.jpg"
-              fill
-              className="object-cover rounded-lg shadow-lg transition duration-300 hover:scale-105"
-              alt="Feature screenshot 3"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-            />
-          </div>
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 container mx-auto">
+        {features.map((feature, index) => (
+          <FeatureImage key={index} src={feature.src} alt={feature.alt} />
+        ))}
       </div>
     </section>
   );
