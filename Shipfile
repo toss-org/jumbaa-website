@@ -1,1 +1,2 @@
-run: bun run dev --port 3000
+script: bun build
+run: bun start --port 3000
