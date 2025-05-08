@@ -1,2 +1,1 @@
-script: bun run build
-run: bun run start --port 3000
+run: out
